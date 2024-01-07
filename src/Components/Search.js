@@ -1,11 +1,13 @@
 import React from "react";
 import axios from "axios";
+import "./Search.css";
 import { useState,useEffect } from "react";
 function Search(props) {
 //   const [searchTerm, setSearchTerm] = useState("");
-  const [prevSearch,setprevSearch]=useState("");
+  
   function SearchTheImage(e){
     e.preventDefault();
+    props.setprevSearch(props.searchTerm)
     let result=e.target.children[1].value;
     // if(result===""){
     //     props.searchVal("random");

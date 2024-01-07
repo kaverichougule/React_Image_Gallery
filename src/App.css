@@ -82,7 +82,7 @@
     align-items: center;
   }
   .gallery .images{
-    columns: 3 340px;
+    columns: 4 200px;
     gap: 15px;
     max-width: 90%;
   }
@@ -129,4 +129,46 @@
   .images img{
     width: 100%;
     border-radius: 5px;
+  }
+  @media screen and (max-width:1025px)  {
+    .heading{
+      text-align: center;
+      font-size: 8rem;
+    }
+    .section1{
+      text-align: center;
+    }
+  
+  }
+  
+  @media screen and (max-width:769px)  {
+    .gallery{
+      margin-top: 5rem;
+    }
+    .heading{
+      text-align: center;
+      font-size: 7rem;
+    }
+    .section1{
+      text-align: center;
+    }
+  
+  }
+  
+  @media screen and (max-width:426px)  {
+    .gallery{
+      margin-top: 12rem;
+    }
+    .heading{
+      text-align: center;
+      font-size: 6rem;
+      margin-left: 50px;
+    }
+    .section1{
+      text-align: center;
+    }
+    form{
+      margin-left:-250px;
+      width: 100px;
+    }
   }
